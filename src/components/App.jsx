@@ -10,7 +10,7 @@ function App() {
 
   React.useEffect(() => {
     const isAllHeld = dice.every((die) => die.isHeld);
-    const allEqual = dice.every((die) => die.value == dice[0].value);
+    const allEqual = dice.every((die) => die.value === dice[0].value);
     if (isAllHeld && allEqual) {
       setTenzies(true);
       console.log("You Won");
